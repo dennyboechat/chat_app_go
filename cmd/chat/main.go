@@ -13,7 +13,7 @@ import (
 func main() {
 	// Create a new chat room
 	chatRoom := chat.NewChatRoom()
-	
+
 	// Start the chat room
 	chatRoom.Start()
 	// Create some users
@@ -22,7 +22,7 @@ func main() {
 		chat.NewUser(2, "Bob"),
 		chat.NewUser(3, "Charlie"),
 	}
-	
+
 	// Register all users
 	for _, user := range users {
 		chatRoom.RegisterUser(user)
