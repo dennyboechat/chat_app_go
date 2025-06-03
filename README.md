@@ -1,34 +1,11 @@
 # A simple chat application using Go language
 
-## Features  
+## Features
 - Users send messages
 - Users receive messages
 - Persist chat history
 - Message filtering
 - Search by user or keyword
-
-## Technical Details
-- In-memory database to store chat history with timestamp and user ID
-- Built-in concurrency features with goroutines
-- Channels for message passing
-- Focus on performance
-
-## Project Structure
-```
-chat_app_go/
-├── cmd/
-│   └── chat/
-│       └── main.go           # Main application entry point
-├── internal/
-│   ├── models/
-│   │   ├── user.go           # User model
-│   │   ├── message.go        # Message model
-│   │   └── chatroom.go       # ChatRoom implementation with channels
-│   └── storage/
-│       └── storage.go        # Message storage interface and implementation
-├── go.mod                    # Go module file
-└── README.md                 # This file
-```
 
 ## How to Run
 1. Ensure Go is installed on your system
@@ -55,11 +32,3 @@ The application provides a simple command-line interface with the following opti
 - **Thread Safety**: All shared resources are protected with mutexes
 - **Interfaces**: The storage layer is defined by interfaces for easy swapping of implementations
 - **Simulated Users**: The application comes with simulated users for testing
-
-## GitHub repository  
-- https://github.com/dennyboechat/chat_app_go
-
-## Timeline  
-- 24-May (Sat) – Send deliverable 1
-- 07-Jun (Sat) – Send deliverable 2
-- 21-Jun (Sat) - Send deliverable 3
